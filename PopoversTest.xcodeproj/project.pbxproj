@@ -10,6 +10,7 @@
 		8D59ACE41CD509A1007F9E09 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D59ACE31CD509A1007F9E09 /* Main_iPhone.storyboard */; };
 		8D59ACE61CD509B7007F9E09 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D59ACE51CD509B7007F9E09 /* Main_iPad.storyboard */; };
 		8D59ACE91CD50B56007F9E09 /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D59ACE81CD50B56007F9E09 /* DMViewController.m */; };
+		8D59ACEC1CD50FE9007F9E09 /* DMDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D59ACEB1CD50FE9007F9E09 /* DMDetailsViewController.m */; };
 		8DABC93B1CCFC32F00E20E72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC93A1CCFC32F00E20E72 /* main.m */; };
 		8DABC93E1CCFC32F00E20E72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DABC93D1CCFC32F00E20E72 /* AppDelegate.m */; };
 		8DABC9461CCFC32F00E20E72 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DABC9451CCFC32F00E20E72 /* Images.xcassets */; };
@@ -32,6 +33,8 @@
 		8D59ACE51CD509B7007F9E09 /* Main_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main_iPad.storyboard; path = ../Main_iPad.storyboard; sourceTree = "<group>"; };
 		8D59ACE71CD50B56007F9E09 /* DMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMViewController.h; sourceTree = "<group>"; };
 		8D59ACE81CD50B56007F9E09 /* DMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
+		8D59ACEA1CD50FE9007F9E09 /* DMDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMDetailsViewController.h; sourceTree = "<group>"; };
+		8D59ACEB1CD50FE9007F9E09 /* DMDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMDetailsViewController.m; sourceTree = "<group>"; };
 		8DABC9351CCFC32F00E20E72 /* PopoversTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopoversTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DABC9391CCFC32F00E20E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DABC93A1CCFC32F00E20E72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				8DABC93D1CCFC32F00E20E72 /* AppDelegate.m */,
 				8D59ACE71CD50B56007F9E09 /* DMViewController.h */,
 				8D59ACE81CD50B56007F9E09 /* DMViewController.m */,
+				8D59ACEA1CD50FE9007F9E09 /* DMDetailsViewController.h */,
+				8D59ACEB1CD50FE9007F9E09 /* DMDetailsViewController.m */,
 				8DABC9451CCFC32F00E20E72 /* Images.xcassets */,
 				8DABC9471CCFC32F00E20E72 /* LaunchScreen.xib */,
 				8DABC9381CCFC32F00E20E72 /* Supporting Files */,
@@ -225,6 +230,7 @@
 			files = (
 				8DABC93E1CCFC32F00E20E72 /* AppDelegate.m in Sources */,
 				8D59ACE91CD50B56007F9E09 /* DMViewController.m in Sources */,
+				8D59ACEC1CD50FE9007F9E09 /* DMDetailsViewController.m in Sources */,
 				8DABC93B1CCFC32F00E20E72 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

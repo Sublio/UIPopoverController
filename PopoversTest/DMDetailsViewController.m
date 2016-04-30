@@ -1,18 +1,18 @@
 //
-//  DMViewController.m
+//  DMDetailsViewController.m
 //  PopoversTest
 //
 //  Created by sublio on 30/04/16.
 //  Copyright (c) 2016 sublio. All rights reserved.
 //
 
-#import "DMViewController.h"
+#import "DMDetailsViewController.h"
 
-@interface DMViewController ()
+@interface DMDetailsViewController ()
 
 @end
 
-@implementation DMViewController
+@implementation DMDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,19 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma  mark - Actions;
-
-- (IBAction) actionAdd:(UIBarButtonItem*)sender{
-    
-    
-    
-}
-- (IBAction) actionPressMe:(UIButton*)sender{
-    
-    
-    
 }
 
 
