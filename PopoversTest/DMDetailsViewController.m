@@ -25,5 +25,10 @@
 }
 
 
+- (void) dealloc {
+    
+    NSLog (@"Details view has deallocated");
+}
+
 
 @end

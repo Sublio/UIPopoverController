@@ -7,6 +7,7 @@
 //
 
 #import "DMViewController.h"
+#import "DMViewController.h"
 
 @interface DMViewController ()
 
@@ -28,7 +29,13 @@
 
 - (IBAction) actionAdd:(UIBarButtonItem*)sender{
     
+    DMViewController*  vc = [self.storyboard instantiateViewControllerWithIdentifier:@"DMDetailsViewController"];
     
+    UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    
+    [popover presentPopoverFromBarButtonItem:sender
+                    permittedArrowDirections: UIPopoverArrowDirectionAny
+                                    animated:YES];
     
 }
 - (IBAction) actionPressMe:(UIButton*)sender{
