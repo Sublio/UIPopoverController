@@ -34,7 +34,11 @@
 - (void) showControllerAsModal:(UIViewController*)vc {
     
     
-    [self presentViewController:vc animated:YES completion:^{
+    UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    
+    [self presentViewController:nav
+                       animated:YES
+                     completion:^{
         
         
         double delayInSeconds = 3.0;
@@ -42,7 +46,7 @@
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             
             [self dismissViewControllerAnimated:YES completion:nil];
-            self.popover = nil;
+            
             
         });
         
@@ -56,12 +60,14 @@
     
     if (!sender){
         
-        return
-    };
+        return;
+    }
     
-    UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:vc];
+    UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:vc];
     
-    vc.preferredContentSize = CGSizeMake(300, 300 );
+    UIPopoverController* popover = [[UIPopoverController alloc] initWithContentViewController:nav];
+    
+    nav.preferredContentSize = CGSizeMake(600, 600);
     popover.delegate = self;
     self.popover = popover;
     
@@ -138,7 +144,14 @@
     
 }
 
+#pragma  mark - Segue
 
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    NSLog(@"prepare for Segue %@", segue.identifier);
+    
+}
 
 @end
 

@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" id="zg3-vA-5uf">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lAd-qC-pbL">
                             <connections>
-                                <action selector="actionAdd:" destination="VLC-El-QxF" id="6DV-gM-fLG"/>
+                                <segue destination="6Xu-Hx-MpI" kind="push" identifier="ShowDetails" id="XXp-N6-4N7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,6 +78,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1eh-IZ-urI"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zI0-El-bjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
